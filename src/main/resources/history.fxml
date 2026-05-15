@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="10"
+      alignment="CENTER"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.atm.controller.HistoryController"
+      prefWidth="400"
+      prefHeight="400">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="Transaction History"
+           style="-fx-font-size: 22px; -fx-font-weight: bold;" />
+
+    <TextArea fx:id="historyArea"
+              editable="false"
+              prefHeight="250"/>
+
+    <Button text="Back"
+            onAction="#handleBack"/>
+
+</VBox>

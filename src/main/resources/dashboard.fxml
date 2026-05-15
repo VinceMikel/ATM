@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox spacing="15"
+      alignment="CENTER"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.atm.controller.DashboardController"
+      prefWidth="400"
+      prefHeight="350">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="ATM Dashboard"
+           style="-fx-font-size: 24px; -fx-font-weight: bold;" />
+
+    <Button text="View Balance"
+            onAction="#handleBalance"/>
+
+    <Button text="Withdraw"
+            onAction="#handleWithdraw"/>
+
+    <Button text="Deposit"
+            onAction="#handleDeposit"/>
+
+
+    <Button text="Transaction History"
+            onAction="#handleHistory"/>
+
+    <Button text="Toggle Dark Mode"
+            onAction="#handleDarkMode"/>
+
+    <Button text="Logout"
+            onAction="#handleLogout"/>
+
+
+
+
+
+    <Label fx:id="messageLabel"/>
+
+</VBox>
